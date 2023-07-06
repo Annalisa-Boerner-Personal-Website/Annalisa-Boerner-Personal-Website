@@ -25,6 +25,9 @@ html {
 .homePage {
 
     border-bottom: 1px solid black;
+    display: block;
+    margin: auto;
+    
 }
 
 footer {
@@ -64,15 +67,15 @@ p, ul {
 
 
 
-.part1img, .part1text, .part2img, .part2text, .part3text, .part3img {
+.part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
     vertical-align: top;
 }
 
-.part1text, .part2text, .part3text {
+.part1text, .part2text, .part3text, .portfolio1text {
     display: inline-block;
     width: 400px;
 }
 
-.part1img, .part3img {
+.part1img, .part3img, .portfolio1img {
     padding: 20px;
 }
