@@ -42,7 +42,14 @@ footer {
     padding: 10px;
 }
 
-h2, h3 {
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+h3 {
     text-align: center;
     color: white;
     font-size: large;
@@ -55,18 +62,6 @@ p, ul {
     color: white;
 }
 
-/* 
-.part1img, .part3img {
-    margin-right: 15px;
-    float: left;
-    margin-bottom: 100px;
-}
-
-.part2img {
-    margin-left: 15px;
-    float: right;
-}
-*/
 
 
 .part1img, .part1text, .part2img, .part2text, .part3text, .part3img {
@@ -76,4 +71,8 @@ p, ul {
 .part1text, .part2text, .part3text {
     display: inline-block;
     width: 400px;
+}
+
+.part1img, .part3img {
+    padding: 20px;
 }
