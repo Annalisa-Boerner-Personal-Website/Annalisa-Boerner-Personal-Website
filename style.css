@@ -55,8 +55,25 @@ p, ul {
     color: white;
 }
 
-
-.part1img {
+/* 
+.part1img, .part3img {
     margin-right: 15px;
     float: left;
+    margin-bottom: 100px;
+}
+
+.part2img {
+    margin-left: 15px;
+    float: right;
+}
+*/
+
+
+.part1img, .part1text, .part2img, .part2text, .part3text, .part3img {
+    vertical-align: top;
+}
+
+.part1text, .part2text, .part3text {
+    display: inline-block;
+    width: 400px;
 }
