@@ -2,6 +2,7 @@ header {
     background-color: rgba(22, 84, 138, 0.377);
     padding: 1px;
     /* how to make links black */
+    height: 70px;
 }
 
 html {
