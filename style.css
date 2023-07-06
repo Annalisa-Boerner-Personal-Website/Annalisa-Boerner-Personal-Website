@@ -1,6 +1,7 @@
 header {
     background-color: rgba(22, 84, 138, 0.377);
     padding: 1px;
+    /* how to make links black */
 }
 
 html {
@@ -16,6 +17,15 @@ html {
 footer {
 
     background-color: rgba(22, 84, 138, 0.377);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.padding_needed {
+    padding: 10px;
 }
 
 h2 {
