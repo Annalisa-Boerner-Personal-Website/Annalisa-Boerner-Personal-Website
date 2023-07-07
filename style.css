@@ -67,7 +67,7 @@ p, ul {
 
 
 
-.part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
+/* .part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
     vertical-align: top;
 }
 
@@ -78,4 +78,13 @@ p, ul {
 
 .part1img, .part3img, .portfolio1img {
     padding: 20px;
+} */
+
+.flexy {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+   
 }
