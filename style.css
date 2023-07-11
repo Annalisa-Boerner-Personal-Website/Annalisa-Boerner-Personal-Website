@@ -106,9 +106,18 @@ form {
 }
 
 @media screen and (max-width: 600px) {
+    /* text adjustments */
     header {
         font-size: 60%;
     }
     h2 { font-size: medium;}
+    h3, label { font-size: smaller;}
+    form { margin: 0px; }
+
+    /* image adjustments */
     .homePage { width: 80%;}
+    .portfolio1img { width: 40%;
+        height: 20%;
+        margin-top: 3rem;
+    }
 }
