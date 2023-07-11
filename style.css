@@ -20,6 +20,8 @@ h1 {
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #385163;
+    background-image: url("background4.jpg");
+    background-size: 100%;
 }
 
 .homePage {
@@ -65,20 +67,6 @@ p, ul {
     color: white;
 }
 
-
-
-/* .part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
-    vertical-align: top;
-}
-
-.part1text, .part2text, .part3text, .portfolio1text {
-    display: inline-block;
-    width: 400px;
-}
-
-.part1img, .part3img, .portfolio1img {
-    padding: 20px;
-} */
 
 .flexy {
 
@@ -132,5 +120,43 @@ form {
         width: 40%;
         height: 30%;
     }
+
+}
+
+.spam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.button {
+    background-color: white;
+    border-radius: 5px;
+    background-color: azure;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    color: #385163;
+
+    &:hover {
+        background-color:#385163;
+        color: azure;
+       
+
+    }
+}
+
+p:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%
+}
+
+.part3text {   
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%;
 
 }
