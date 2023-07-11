@@ -134,3 +134,11 @@ form {
     }
 
 }
+
+.spam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
