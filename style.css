@@ -2,7 +2,7 @@ header {
     background-color: white;
     padding: 1px;
     /* how to make links black */
-    height: 50px;
+    height: 3em;
     color:#385163;
     font-weight: lighter;
    
@@ -35,8 +35,8 @@ footer {
     background-color: white;
     display: block;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: .25rem;
+    margin-top: 1rem;
     
 
 }
@@ -87,4 +87,50 @@ p, ul {
     justify-content: center;
     gap: 20px;
    
+}
+
+label {
+    color: white;
+}
+
+form {
+    margin: 2rem;
+}
+
+.floatMarginLeft {
+    margin-left: 1rem;
+}
+
+.floatMarginRight {
+    margin-right: 1rem;;
+}
+
+@media screen and (max-width: 600px) {
+    /* text adjustments */
+    header {
+        font-size: 60%;
+    }
+    h2 { font-size: medium;}
+    h3, label { font-size: smaller;}
+    form { margin: 0px; }
+
+    /* image adjustments */
+    .homePage { width: 80%;}
+    .portfolio1img { width: 40%;
+        height: 20%;
+        margin-top: 3rem;
+    }
+    .part1img {
+        width: 50%;
+         height: 50%;
+    }
+    .part2img {
+        width: 30%;
+        height: 60%;
+    }
+    .part3img {
+        width: 40%;
+        height: 30%;
+    }
+
 }
