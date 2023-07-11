@@ -120,4 +120,17 @@ form {
         height: 20%;
         margin-top: 3rem;
     }
+    .part1img {
+        width: 50%;
+         height: 50%;
+    }
+    .part2img {
+        width: 30%;
+        height: 60%;
+    }
+    .part3img {
+        width: 40%;
+        height: 30%;
+    }
+
 }
