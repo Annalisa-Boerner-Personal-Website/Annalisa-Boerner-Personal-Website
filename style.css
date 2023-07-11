@@ -88,3 +88,19 @@ p, ul {
     gap: 20px;
    
 }
+
+label {
+    color: white;
+}
+
+form {
+    margin: 2rem;
+}
+
+.floatMarginLeft {
+    margin-left: 1rem;
+}
+
+.floatMarginRight {
+    margin-right: 1rem;;
+}
