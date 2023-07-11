@@ -2,7 +2,7 @@ header {
     background-color: white;
     padding: 1px;
     /* how to make links black */
-    height: 50px;
+    height: 3em;
     color:#385163;
     font-weight: lighter;
    
@@ -35,8 +35,8 @@ footer {
     background-color: white;
     display: block;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: .25rem;
+    margin-top: 1rem;
     
 
 }
@@ -103,4 +103,12 @@ form {
 
 .floatMarginRight {
     margin-right: 1rem;;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 60%;
+    }
+    h2 { font-size: medium;}
+    .homePage { width: 80%;}
 }
