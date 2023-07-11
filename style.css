@@ -68,20 +68,6 @@ p, ul {
 }
 
 
-
-/* .part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
-    vertical-align: top;
-}
-
-.part1text, .part2text, .part3text, .portfolio1text {
-    display: inline-block;
-    width: 400px;
-}
-
-.part1img, .part3img, .portfolio1img {
-    padding: 20px;
-} */
-
 .flexy {
 
     display: flex;
@@ -162,6 +148,15 @@ form {
     }
 }
 
-body {
-   
+p:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%
+}
+
+.part3text {   
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%;
+
 }
