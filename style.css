@@ -1,4 +1,4 @@
-/* formatting for everywhere */
+/* formatting for header */
 
 header {
     background-color: white;
@@ -17,6 +17,33 @@ header {
     margin-right: 1rem;
 }
 
+ /* footer stuff  */
+ 
+footer {
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 0.25rem;
+    margin-top: 1rem;
+    position: absolute;
+    width: 100%;
+}
+
+.padding_needed {
+    padding: 2rem;
+}
+
+.github {
+    padding: 2rem;
+
+}
+
+.CatButton {
+    margin-top: 1rem;
+}
+
+/* general text formatting */
+
 a {
     color: #385163;
 }
@@ -30,28 +57,6 @@ html {
     background-color: #385163;
     background-image: url("background4.jpg");
     background-size: 100%;
-}
-
-.homePage {
-    border-bottom: 1px solid black;
-    display: block;
-    margin: auto;
-}
-
-footer {
-    background-color: white;
-    display: block;
-    text-align: center;
-    padding: 0.25rem;
-    margin-top: 1rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.padding_needed {
-    padding: 10px;
 }
 
 h2 {
@@ -79,7 +84,16 @@ ul {
     color: white;
 }
 
+/* index image bottom border*/
+
+ .homePage {
+    border-bottom: 1px solid black;
+    display: block;
+    margin: auto;
+}
+
 /* flexboxes for about and portfolio pages */
+
 .flexy {
     display: flex;
     flex-direction: row;
@@ -87,7 +101,8 @@ ul {
     gap: 20px;
 }
 
-/* form stuff */
+/* form text formatting */
+
 label {
     color: white;
 }
@@ -96,7 +111,142 @@ form {
     margin: 2rem;
 }
 
+/* contactSuccess page */
+
+.spam {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    background-color: white;
+    border-radius: 5px;
+    background-color: azure;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    color: #385163;
+
+    &:hover {
+        background-color: #385163;
+        color: azure;
+    }
+}
+
+p:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/* compensating for nth child odd because this page has p then ul then p, which throws off the pattern */
+
+.part3text {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.contactCat {
+    margin-top: 3rem;
+}
+
+/* DESKTOP silly cat grid */
+
+
+.gridPractice {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    gap: 1em;
+    /* grid-auto-rows: minmax(5rem, auto); */
+    background-image: url("background4.jpg");
+    background-size: 100%;
+}
+
+.nacho {
+    background-color: #d45d854b;
+    grid-area: 1 / 1 / 2 / 4;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+    z-index: 2;
+}
+
+.yuki {
+    background-color: #68477281;
+    grid-area: 1 / 8 / 3 / 6;
+    margin: auto;
+    padding: 2rem 3rem ;
+    z-index: 1;
+}
+
+.NACHO {
+    background-color: #3851634b;
+    grid-area: 2 / 1 / 4 / 4;
+    margin: auto;
+    padding: 2rem 3rem;
+    z-index: 1;
+}
+
+.YUKI {
+    background-color: #d45d8596;
+    grid-area: 3 / 4 / 4 / 8;
+    margin: auto;
+    padding: 5rem 2rem;
+    z-index: 1;
+}
+
+.NachoAndYuki {
+    background-color: #3851634b;
+    grid-area: 4 / 3 / 50 / 10;
+    margin: 20%;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.makeSmol {
+    width: 25rem;
+}
+
+.makeMedium {
+    width: 50rem;
+}
+
+.walkingNacho {
+    grid-area: 1 / 1 / 4 / 4;
+    z-index: 5;
+    opacity: .5;
+
+}
+
+.walkingNachoResize {
+    width: 100rem;
+}
+
+.snuggle {
+    grid-area: 4 / 2 / 5 / 3;
+    z-index: 2;
+    opacity: 80%;
+    padding: 4rem;
+}
+
+.yukipic {
+    grid-area: 3
+     / 4 / 4 / 5;
+    z-index: 0;
+}
+.nachopic {
+    z-index: 1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.pyramidYuki {
+    grid-area: 2 / 4 / 2 / 5;
+}
+
 /* mobile formatting */
+
 @media screen and (max-width: 600px) {
     /* text adjustments */
     header {
@@ -135,7 +285,11 @@ form {
         height: 30%;
     }
 
-    /* silly cat grid */
+    .contactCat {
+        width: 30%;
+        height: 22%;
+    }
+    /* MOBILE silly cat grid */
     .gridPractice {
         grid-auto-columns: 1em;
     }
@@ -158,6 +312,7 @@ form {
         grid-area: 4 / 2 / 5 / 3;
         z-index: 2;
         opacity: 80%;
+        margin-top: 2rem;
     }
 
     .yukipic {
@@ -168,94 +323,15 @@ form {
         z-index: 1;
         grid-area: 1 / 1 / 2 / 2;
     }
-}
 
-/* contactSuccess page */
-.spam {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.button {
-    background-color: white;
-    border-radius: 5px;
-    background-color: azure;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    border: 1px solid black;
-    color: #385163;
-
-    &:hover {
-        background-color: #385163;
-        color: azure;
+    footer, .padding_needed, .github {
+        margin-top: .5rem;
+        padding: 0;
     }
-}
 
-p:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.205);
-    border-radius: 5px;
-    padding: 1%;
-}
+    .CatButton {
+        
+        margin-top: 1rem;
+    }
 
-/* compensating for nth child odd because this page has p then ul then p, which throws off the pattern */
-.part3text {
-    background-color: rgba(255, 255, 255, 0.205);
-    border-radius: 5px;
-    padding: 1%;
-}
-
-.contactCat {
-    margin-top: 3rem;
-}
-
-/* grid cat page */
-.gridPractice {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    gap: 1em;
-    /* grid-auto-rows: minmax(5rem, auto); */
-    background-image: url("background4.jpg");
-    background-size: 100%;
-}
-
-.nacho {
-    background-color: #d45d854b;
-    grid-area: 1 / 1 / 2 / 4;
-    margin: auto;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.yuki {
-    background-color: #68477281;
-    grid-area: 2 / 2 / 3 / 6;
-    margin: auto;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.NACHO {
-    background-color: #3851634b;
-    grid-area: 3 / 1 / 4 / 4;
-    margin: auto;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.YUKI {
-    background-color: #d45d8596;
-    grid-area: 3 / 4 / 4 / 8;
-    margin: auto;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.NachoAndYuki {
-    background-color: #3851634b;
-    grid-area: 6 / 3 / 50 / 10;
-    margin: 20%;
-    padding: 1rem;
-    z-index: 1;
 }
