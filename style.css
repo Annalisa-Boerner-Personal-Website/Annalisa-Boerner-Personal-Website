@@ -39,6 +39,10 @@ footer {
     text-align: center;
     padding: .25rem;
     margin-top: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 
 }
@@ -159,4 +163,8 @@ p:nth-child(odd) {
     border-radius: 5px;
     padding: 1%;
 
+}
+
+.contactCat {
+    margin-top: 3rem;
 }
