@@ -338,3 +338,15 @@ p:nth-child(odd) {
     }
 
 }
+
+/* transition effect? */
+
+.yukipic {
+    width: 5px;
+    transition: width 2s;
+
+}
+
+.yukipic:hover {
+    width: 75rem;
+}
