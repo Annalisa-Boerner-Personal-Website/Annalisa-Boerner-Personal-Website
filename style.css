@@ -1,90 +1,108 @@
 header {
-    background-color: white;
-    padding: 1px;
-    /* how to make links black */
-    height: 50px;
-    color:#385163;
-    font-weight: lighter;
-   
+     background-color: white;
+     padding: 1px;
+     /* how to make links black */
+     height: 50px;
+     color: #385163;
+     font-weight: lighter;
 }
 
 a {
-    color: #385163;
+     color: #385163;
+     font-size: 2rem;
 }
 h1 {
-
-    font-weight: lighter;
-    font-size: larger;
+     font-weight: lighter;
+     font-size: larger;
 }
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #385163;
+     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
 }
 
 .homePage {
-
-    border-bottom: 1px solid black;
-    display: block;
-    margin: auto;
-    
+     border-bottom: 1px solid black;
+     display: block;
+     margin: auto;
+     width: 40vw;
 }
 
 footer {
-
-    background-color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    
-
+     background-color: white;
+     display: block;
+     text-align: center;
+     padding: 10px;
+     margin-top: 20px;
 }
 
 .padding_needed {
-    padding: 10px;
+     padding: 10px;
 }
 
 h2 {
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-weight: lighter;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: lighter;
 }
 
 h3 {
-    text-align: center;
-    color: white;
-    font-size: large;
-    font-weight: lighter;
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: lighter;
 }
 
-
-p, ul {
-    font-size: smaller;
-    color: white;
+p,
+ul {
+     font-size: 1.25rem;
 }
-
-
-
-/* .part1img, .part1text, .part2img, .part2text, .part3text, .part3img, .portfolio1text, .portfolio1img {
-    vertical-align: top;
-}
-
-.part1text, .part2text, .part3text, .portfolio1text {
-    display: inline-block;
-    width: 400px;
-}
-
-.part1img, .part3img, .portfolio1img {
-    padding: 20px;
-} */
 
 .flexy {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     gap: 20px;
+     align-items: center;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-   
+.part3img,
+.part2img,
+.part1img {
+     width: 25vw;
+}
+
+#part1text,
+#part3text,
+#portfolio-text-1 {
+     width: 50vw;
+     line-height: 1.4;
+     margin-left: 3rem;
+}
+
+#part2text,
+#portfolio-text-2 {
+     margin-top: 5rem;
+     margin-left: 5rem;
+     width: 45vw;
+     line-height: 1.4;
+}
+#about-me {
+     margin: 5rem;
+}
+
+#home-page-text {
+     margin: auto;
+     width: 60vw;
+}
+
+#spells-image-1,
+#abs-list-image {
+     width: 45vw;
+     margin-top: 5rem;
+}
+
+#portfolio1img {
+     width: 35vw;
+     margin-top: 5rem;
+     margin-right: 5rem;
 }

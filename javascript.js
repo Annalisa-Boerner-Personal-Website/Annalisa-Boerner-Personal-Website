@@ -1,2 +1,1 @@
-
-alert('Welcome to my Personal Website!')
+// alert('Welcome to my Personal Website!')
