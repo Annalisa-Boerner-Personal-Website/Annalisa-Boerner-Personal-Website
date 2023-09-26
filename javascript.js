@@ -1,2 +1,1 @@
-
-alert('Welcome! Have a look around and feel free to contact me via the Contact page.')
+// alert('Welcome to my Personal Website!')

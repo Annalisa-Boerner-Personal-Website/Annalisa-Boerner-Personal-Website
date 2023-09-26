@@ -1,352 +1,146 @@
 /* formatting for header */
 
 header {
-    background-color:#385163;
-    padding: 1px;
-    /* how to make links black */
-    height: 3em;
-    color: rgb(214, 214, 214);
-    font-weight: lighter;
+     background-color: white;
+     padding: 1px;
+     /* how to make links black */
+     height: 50px;
+     font-weight: lighter;
 }
 
 .floatMarginLeft {
-    margin-left: 1rem;
+     margin-left: 1rem;
 }
 
 .floatMarginRight {
-    margin-right: 1rem;
+     margin-right: 1rem;
 }
 
- /* footer stuff  */
- 
+/* footer stuff  */
+
 footer {
-    background-color:rgb(214, 214, 214);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem;
-    margin-top: 1rem;
-    position: absolute;
-    width: 100%;
-    height: 4rem;
-    opacity: 80%;
+     background-color: rgb(214, 214, 214);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0.25rem;
+     margin-top: 1rem;
+     position: absolute;
+     width: 100%;
+     height: 4rem;
+     opacity: 80%;
 }
 
 .padding_needed {
-    padding-top: 1rem;
+     padding-top: 1rem;
 }
 
 .github {
-    padding-top: 1rem;
-
+     padding-top: 1rem;
 }
 
 .CatButton {
-    margin-top: 2rem;
+     margin-top: 2rem;
 }
 
 /* general text formatting */
 
 a {
-    color:rgb(214, 214, 214);
+     color: #385163;
+     font-size: 2rem;
 }
 h1 {
-    font-weight: lighter;
-    font-size: larger;
-  
+     font-weight: lighter;
+     font-size: larger;
 }
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #385163;
-    background-image: url("background7.jpg");
-    background-size: 100%;
+     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+}
+
+.homePage {
+     border-bottom: 1px solid black;
+     display: block;
+     margin: auto;
+     width: 40vw;
+}
+
+footer {
+     background-color: white;
+     display: block;
+     text-align: center;
+     padding: 10px;
+     margin-top: 20px;
+}
+
+.padding_needed {
+     padding: 10px;
 }
 
 h2 {
-    text-align: center;
-    color: #385163;
-    font-size: 24px;
-    font-weight: lighter;
+     text-align: center;
+     font-size: 2rem;
+     font-weight: lighter;
 }
 
 h3 {
-    text-align: center;
-    color: #385163;
-    font-size: large;
-    font-weight: lighter;
+     text-align: center;
+     font-size: 1.5rem;
+     font-weight: lighter;
 }
-h4 {
-    text-align: center;
-    color: #385163;
-    font-size: medium;
-    font-weight: lighter;
-}
+
 p,
 ul {
-    font-size: smaller;
-    color:#385163;
+     font-size: 1.25rem;
 }
-
-/* index image bottom border*/
-
- .homePage {
-    border-bottom: 1px solid black;
-    display: block;
-    margin: auto;
-}
-
-/* flexboxes for about and portfolio pages */
 
 .flexy {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     gap: 20px;
+     align-items: center;
 }
 
-/* form text formatting */
-
-label {
-    color:  #385163;
+.part3img,
+.part2img,
+.part1img {
+     width: 25vw;
 }
 
-.contactForm {
-    margin: 2rem;
+#part1text,
+#part3text,
+#portfolio-text-1 {
+     width: 50vw;
+     line-height: 1.4;
+     margin-left: 3rem;
 }
 
-/* contactSuccess page */
-
-.spam {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#part2text,
+#portfolio-text-2 {
+     margin-top: 5rem;
+     margin-left: 5rem;
+     width: 45vw;
+     line-height: 1.4;
+}
+#about-me {
+     margin: 5rem;
 }
 
-.button {
-    background-color: white;
-    border-radius: 5px;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    border: 1px solid black;
-    color: #385163;
-
-    &:hover {
-        background-color: #385163;
-        color: azure;
-    }
+#home-page-text {
+     margin: auto;
+     width: 60vw;
 }
 
-p:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.205);
-    border-radius: 5px;
-    padding: 1%;
+#spells-image-1,
+#abs-list-image {
+     width: 45vw;
+     margin-top: 5rem;
 }
 
-/* compensating for nth child odd because this page has p then ul then p, which throws off the pattern */
-
-.part3text {
-    background-color: rgba(255, 255, 255, 0.205);
-    border-radius: 5px;
-    padding: 1%;
-}
-
-.contactCat {
-    margin-top: 3rem;
-}
-
-/* DESKTOP silly cat grid */
-
-
-.gridPractice {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    gap: 1em;
-    /* grid-auto-rows: minmax(5rem, auto); */
-    background-image: url("background4.jpg");
-    background-size: 100%;
-}
-
-.nacho {
-    background-color: #d45d854b;
-    grid-area: 1 / 1 / 2 / 4;
-    margin: auto;
-    padding: 0 2rem 0 2rem;
-    z-index: 2;
-}
-
-.yuki {
-    background-color: #68477281;
-    grid-area: 1 / 8 / 3 / 6;
-    margin: auto;
-    padding: 2rem 3rem ;
-    z-index: 1;
-}
-
-.NACHO {
-    background-color: #3851634b;
-    grid-area: 2 / 1 / 4 / 4;
-    margin: auto;
-    padding: 2rem 3rem;
-    z-index: 1;
-}
-
-.YUKI {
-    background-color: #d45d8596;
-    grid-area: 3 / 4 / 4 / 8;
-    margin: auto;
-    padding: 5rem 2rem;
-    z-index: 1;
-}
-
-.NachoAndYuki {
-    background-color: #3851634b;
-    grid-area: 4 / 3 / 50 / 10;
-    margin: 20%;
-    padding: 1rem;
-    z-index: 1;
-}
-
-.makeSmol {
-    width: 25rem;
-}
-
-.makeMedium {
-    width: 50rem;
-}
-
-.walkingNacho {
-    grid-area: 1 / 1 / 4 / 4;
-    z-index: 5;
-    opacity: .5;
-
-}
-
-.walkingNachoResize {
-    width: 100rem;
-}
-
-.snuggle {
-    grid-area: 4 / 2 / 5 / 3;
-    z-index: 2;
-    opacity: 80%;
-    padding: 4rem;
-}
-
-.yukipic {
-    grid-area: 3
-     / 4 / 4 / 5;
-    z-index: 0;
-}
-.nachopic {
-    z-index: 1;
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.pyramidYuki {
-    grid-area: 2 / 4 / 2 / 5;
-}
-
-/* mobile formatting */
-
-@media screen and (max-width: 600px) {
-    /* text adjustments */
-    header {
-        font-size: 60%;
-    }
-    h2 {
-        font-size: medium;
-    }
-    h3,
-    label {
-        font-size: smaller;
-    }
-    form {
-        margin: 0px;
-    }
-
-    /* image adjustments */
-    .homePage {
-        width: 80%;
-    }
-    .portfolio1img {
-        width: 40%;
-        height: 20%;
-        margin-top: 3rem;
-    }
-    .part1img {
-        width: 50%;
-        height: 50%;
-    }
-    .part2img {
-        width: 30%;
-        height: 60%;
-    }
-    .part3img {
-        width: 40%;
-        height: 30%;
-    }
-
-    .contactCat {
-        width: 30%;
-        height: 22%;
-    }
-    /* MOBILE silly cat grid */
-    .gridPractice {
-        grid-auto-columns: 1em;
-    }
-
-    .makeSmol {
-        width: 10rem;
-    }
-
-    .makeMedium {
-        width: 15rem;
-    }
-    .walkingNacho {
-        grid-area: 1 / 1 / 4 / 4;
-        z-index: 5;
-        opacity: .5;
-
-    }
-
-    .snuggle {
-        grid-area: 4 / 2 / 5 / 3;
-        z-index: 2;
-        opacity: 80%;
-        margin-top: 2rem;
-    }
-
-    .yukipic {
-        grid-area: 3 / 4 / 4 / 5;
-        z-index: 2;
-    }
-    .nachopic {
-        z-index: 1;
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    footer, .padding_needed, .github {
-        margin-top: .5rem;
-        padding: 0;
-    }
-
-    .CatButton {
-        
-        margin-top: 1rem;
-    }
-
-}
-
-/* transition effect? */
-
-.yukipic {
-    width: 5px;
-    transition: width 2s;
-
-}
-
-.yukipic:hover {
-    width: 75rem;
+#portfolio1img {
+     width: 35vw;
+     margin-top: 5rem;
+     margin-right: 5rem;
 }
